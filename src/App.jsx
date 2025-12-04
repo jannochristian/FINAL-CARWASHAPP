@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import DashboardPage from './pages/DashBoardPage';
-<<<<<<< HEAD
 import AdminLoginPage from './pages/AdminLoginPage';
 import AdminSignUpPage from './pages/AdminSignUpPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
@@ -12,13 +11,6 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
   const [currentUser, setCurrentUser] = useState(null);
   const [currentAdmin, setCurrentAdmin] = useState(null);
-=======
-import { supabase } from './supabaseClient';
-
-const App = () => {
-  const [currentPage, setCurrentPage] = useState('login');
-  const [currentUser, setCurrentUser] = useState(null);
->>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
   const [bookings, setBookings] = useState([]);
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -28,21 +20,12 @@ const App = () => {
     fetchServices();
   }, []);
 
-<<<<<<< HEAD
   // Fetch bookings when user or admin logs in
   useEffect(() => {
     if (currentUser || currentAdmin) {
       fetchBookings();
     }
   }, [currentUser, currentAdmin]);
-=======
-  // Fetch bookings when user logs in
-  useEffect(() => {
-    if (currentUser) {
-      fetchBookings();
-    }
-  }, [currentUser]);
->>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
 
   const fetchServices = async () => {
     try {
@@ -75,16 +58,11 @@ const App = () => {
     }
   };
 
-<<<<<<< HEAD
   const handleUserLogin = (user) => {
-=======
-  const handleLogin = (user) => {
->>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
     setCurrentUser(user);
     setCurrentPage('dashboard');
   };
 
-<<<<<<< HEAD
   const handleAdminLogin = (admin) => {
     setCurrentAdmin(admin);
     setCurrentPage('admin-dashboard');
@@ -100,12 +78,6 @@ const App = () => {
     setCurrentAdmin(null);
     setBookings([]);
     setCurrentPage('home');
-=======
-  const handleLogout = () => {
-    setCurrentUser(null);
-    setBookings([]);
-    setCurrentPage('login');
->>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
   };
 
   if (loading) {
@@ -116,7 +88,6 @@ const App = () => {
     );
   }
 
-<<<<<<< HEAD
   // Home/Landing Page
   if (currentPage === 'home') {
     return (
@@ -189,16 +160,6 @@ const App = () => {
           goLogin={() => setCurrentPage('login')}
           goHome={() => setCurrentPage('home')}
         />
-=======
-  return (
-    <div className="app-container">
-      {currentPage === 'login' && (
-        <LoginPage onLogin={handleLogin} goSignUp={() => setCurrentPage('signup')} />
-      )}
-
-      {currentPage === 'signup' && (
-        <SignUpPage goLogin={() => setCurrentPage('login')} />
->>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
       )}
 
       {currentPage === 'dashboard' && currentUser && (
@@ -207,7 +168,6 @@ const App = () => {
           bookings={bookings}
           setBookings={setBookings}
           services={services}
-<<<<<<< HEAD
           onLogout={handleUserLogout}
           refreshBookings={fetchBookings}
         />
@@ -237,12 +197,6 @@ const App = () => {
           onLogout={handleAdminLogout}
         />
       )}
-=======
-          onLogout={handleLogout}
-          refreshBookings={fetchBookings}
-        />
-      )}
->>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
     </div>
   );
 };
