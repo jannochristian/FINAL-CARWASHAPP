@@ -3,7 +3,7 @@ import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import DashboardPage from './pages/DashBoardPage';
 import AdminLoginPage from './pages/AdminLoginPage';
-import AdminSignUpPage from './pages/AdminSignUpPage';
+import AdminSignUpPage from './pages/AdminSignupPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
 import { supabase } from './supabaseClient';
 
