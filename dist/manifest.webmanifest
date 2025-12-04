@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"Carwash Book App","short_name":"Carwash Book","description":"Professional car care at your fingertips.","start_url":"/","display":"standalone","background_color":"#111111","theme_color":"#000000","lang":"en","scope":"/","icons":[{"src":"logo192.png","sizes":"192x192","type":"image/png"},{"src":"logo512.png","sizes":"512x512","type":"image/png"}]}
+=======
+{"name":"Carwash Book App","short_name":"Carwash Book","description":"Discover movie details and trailers","start_url":"/","display":"standalone","background_color":"#111111","theme_color":"#000000","lang":"en","scope":"/","icons":[{"src":"logo192.png","sizes":"192x192","type":"image/png"},{"src":"logo512.png","sizes":"512x512","type":"image/png"}]}
+>>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76

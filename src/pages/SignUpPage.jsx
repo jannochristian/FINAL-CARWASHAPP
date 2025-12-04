@@ -131,14 +131,22 @@ const SignUpPage = ({ goLogin }) => {
         <button
           onClick={handleSignUp}
           disabled={loading}
+<<<<<<< HEAD
           className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-2xl shadow-xl font-semibold hover:scale-105 transform transition-all mb-4 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+=======
+          className="w-full bg-gray-700 text-white py-3 rounded-2xl shadow-xl font-semibold hover:scale-105 transform transition-all mb-4 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+>>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
         >
           {loading ? 'Creating Account...' : 'Sign Up'}
         </button>
 
         <p className="text-center text-sm text-gray-300">
           Already have an account?{' '}
+<<<<<<< HEAD
           <button onClick={goLogin} className="text-blue-600 font-semibold hover:underline">
+=======
+          <button onClick={goLogin} className="text-gray-400 font-semibold hover:underline">
+>>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
             Login
           </button>
         </p>
