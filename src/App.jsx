@@ -128,11 +128,8 @@ const App = () => {
         {/* Landing Content */}
         <div className="relative z-10 text-center space-y-8 px-4">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-            Carwash Booking System
+            Carwash Booking App
           </h1>
-          <p className="text-xl text-blue-300 mb-8">
-            Professional car care at your fingertips
-          </p>
 
           {/* User/Customer Section */}
           <div className="bg-gray-800/80 backdrop-blur-md p-8 rounded-3xl border-2 border-gray-700 mb-6">
