@@ -14,12 +14,8 @@
     "@tailwindcss/vite": "^4.1.17",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-<<<<<<< HEAD
     "tailwindcss": "^4.1.17",
     "workbox-webpack-plugin": "^7.4.0"
-=======
-    "tailwindcss": "^4.1.17"
->>>>>>> 51aac6625647178ec14f5a84c3f3247e1cbb6c76
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
